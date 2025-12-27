@@ -2,6 +2,15 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+
+# Ignore everything except Assets/Packages/DevelopersHub/**
+/*
+!/Assets/
+/Assets/*
+!/Assets/Packages/
+/Assets/Packages/*
+!/Assets/Packages/DevelopersHub/
+
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/
