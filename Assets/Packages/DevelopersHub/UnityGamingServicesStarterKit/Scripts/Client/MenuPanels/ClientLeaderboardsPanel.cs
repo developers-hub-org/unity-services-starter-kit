@@ -76,7 +76,7 @@ namespace DevelopersHub.UnityGamingServicesStarterKit
             options.Offset = _playersPerPage * (page - 1);
             try
             {
-                var scores = await LeaderboardsService.Instance.GetScoresAsync("1", options);
+                var scores = await LeaderboardsService.Instance.GetScoresAsync(BuildConfiguration.Instance.LeaderboardsId, options);
                 for (int i = 0; i < scores.Results.Count; i++)
                 {
                     var score = scores.Results[i];
